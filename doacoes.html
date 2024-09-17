@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="iconmenu.png" alt="icone de menu" id="botao-menu">
+        <a href="index.html"><h1>Faça sua Doação</h1></a>
+        <a href="index.html"><img src="logo.png" alt="logo AmbuApoio" id="logo"></a>
+    </header>
+
+    <nav id="menu-lateral">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="doacoes.html" class="active">Doações</a></li>
+            <li><a href="voluntario.html">Voluntariem-se</a></li>
+            <li><a href="patrocinio.html">Patrocinadores</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Faça a Diferença com sua Doação</h1>
+
+        <br>
+
+        <p>No AmbuApoio, sua contribuição faz toda a diferença na vida de pessoas que precisam de assistência médica urgente. Com a sua ajuda, podemos garantir que ambulâncias estejam equipadas e preparadas para atender às emergências de forma rápida e eficaz.</p>
+
+        <br>
+
+        <h2>Por que Doar?</h2>
+
+        <br>
+
+        <p>Para fazer uma doação, basta seguir estes passos simples:</p>
+        <ul>
+            <li><span>Manutenção e Equipamento:</span> Garantir que as ambulâncias estejam sempre em perfeitas condições e equipadas com o melhor material para o atendimento emergencial.</li>
+            <li><span>Capacitação de Equipes:</span> Investir em treinamento e recursos para que nossos socorristas possam oferecer um atendimento de alta qualidade.</li>
+            <li><span>Apoio às Missões de Emergência:</span> Ajudar a financiar operações e deslocamentos, garantindo que os pacientes recebam o socorro necessário no menor tempo possível.</li>
+        </ul>
+
+        <h2>Como Contribuir</h2>
+
+        <br>
+
+        <p>Para fazer uma doação, basta seguir estes passos simples:</p>
+
+        <br>
+
+        <ol>
+            <li><span>Escolha o Valor:</span> Selecione o valor que deseja doar. Você pode optar por uma doação única ou configurar uma contribuição recorrente.</li>
+            <li><span>Preencha suas Informações:</span> Informe seus dados para que possamos processar sua doação de forma segura e eficaz.</li>
+            <li><span>Confirmação e Agradecimento:</span> Após a confirmação da sua doação, você receberá um e-mail de agradecimento e um recibo para seus registros.</li>
+        </ol>
+
+        <br>
+
+        <h2>Formulário de Doação</h2>
+<form id="donationForm">
+    <label for="valor">Selecione um valor:</label>
+    <input type="text" id="valor" name="valor" required>
+
+    <br>
+
+    <h2>Opções de Contribuição:</h2>
+    <input type="radio" name="option" id="option1" value="1">
+    <label for="option1">Doação única</label>
+    <input type="radio" name="option" id="option2" value="2">
+    <label for="option2">Doação mensal</label>
+
+    <br>
+
+    <h2>Informações Pessoais:</h2>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <h>Informações de Pagamento:</h>
+    <label for="ncartao">Número do cartão:</label>
+    <input type="text" id="ncartao" name="ncartao" required>
+
+    <br>
+
+    <label for="val">Validade do cartão:</label>
+    <input type="text" id="val" name="val" required>
+
+    <br>
+
+    <label for="seguranca">Código de segurança:</label>
+    <input type="text" id="seguranca" name="seguranca" required>
+
+    <br>
+
+    <button type="submit">Confirmar</button>
+</form>
+<p id="confirmation" style="display:none; color: green;">Doação confirmada com sucesso! Agradecemos pelo seu apoio.</p>
+<p id="pq"><small>Site meramente ilustrativo</small></p>
+
+<br>
+
+<p>Toda contribuição, grande ou pequena, é fundamental para a continuidade do nosso trabalho e para garantir que mais vidas possam ser salvas. Agradecemos imensamente pelo seu apoio e generosidade!</p>
+
+<br>
+
+<p id="num">Numero de contato: <a href="tel:+55 4002-8922">4002-8922</a></p>
+    </main>
+
+    <div class="anuncio" id="dois">
+        anúncio
+    </div>
+    
+    <footer>
+    <p>Site criado por <a href="https://github.com/Hamster0718" rel="external" target="_blank" class="rodape">Ana Laura do Santos</a>, <a href="https://github.com/AnaJuBolinho" target="_blank" rel="external" class="rodape">Ana Julia Belanciere</a>, e <a href="https://github.com/JulhoAgosto" target="_blank" rel="external" class="rodape">Julio Gonçalves</a> 
+    </p>
+    <p><small>Participação de <a href="https://github.com/NathanEABev" target="_blank" rel="external" class="rodape">Nathan Bevilaqua</a></small></p>
+    </footer>
+
+    <br>
+
+    <input type="number" name="Valor" id="value">
+    <script src="script.js"></script>
+</body>
+</html>
