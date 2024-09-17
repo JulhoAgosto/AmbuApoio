@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntariem-se</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="iconmenu.png" alt="icone de menu" id="botao-menu">
+        <a href="index.html"><h1>Faça sua Doação</h1></a>
+        <a href="index.html"><img src="logo.png" alt="logo AmbuApoio" id="logo"></a>
+    </header>
+
+    <nav id="menu-lateral">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="voluntario.html" class="active">Voluntariem-se</a></li>
+            <li><a href="patrocinio.html">Patrocinadores</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Seja um Voluntário e Faça a Diferença!</h1>
+
+        <br>
+
+        <p>No AmbuApoio, acreditamos que toda ajuda pode salvar vidas. Com a falta de ambulâncias em situações de emergência, seu apoio pode ser crucial. Junte-se a nós e contribua com suas habilidades e tempo, tornando o atendimento mais rápido e eficaz.</p>
+
+        <br>
+
+        <h2>Ofereça Carona para Pessoas Feridas</h2>
+
+        <br>
+
+        <p>Quando cada minuto conta, a falta de transporte pode significar uma espera perigosa para quem precisa de atendimento médico. Como voluntário, você pode oferecer carona para levar pacientes em situações de emergência até o hospital. Seu veículo pode ser o meio pelo qual vidas são salvas.</p>
+
+        <br>
+
+        <h3>Como funciona?</h3>
+
+        <br>
+
+        <ul>
+            <li>Você será avisado quando houver falta de ambulâncias na sua região.</li>
+            <li>Ao se voluntariar, você será conectado a uma pessoa que precisa de transporte urgente para o hospital.</li>
+            <li>Orientações sobre primeiros socorros e procedimentos durante o transporte serão fornecidas para garantir a segurança de todos.</li>
+        </ul>
+
+        <br>
+
+        <h2>Seja um Enfermeiro Voluntário</h2>
+
+        <br>
+
+        <p>Se você é um profissional de enfermagem e deseja contribuir diretamente para salvar vidas, você pode atuar como voluntário em um pronto atendimento emergencial. Sua presença será essencial para oferecer os primeiros cuidados durante o transporte de um paciente ao hospital, garantindo uma chegada mais segura.</p>
+
+        <br>
+
+        <h3>Como funciona?</h3>
+
+        <br>
+
+        <ul>
+            <li>Ao se voluntariar, você poderá ser chamado para ajudar em emergências, atendendo pacientes no caminho ao hospital.</li>
+            <li>Você será acionado quando houver necessidade de um pronto atendimento durante o trajeto, trabalhando em conjunto com motoristas voluntários e ambulâncias disponíveis.</li>
+            <li>Equipamentos médicos e suporte serão disponibilizados para que você possa oferecer o melhor atendimento possível.</li>
+        </ul>
+
+        <br>
+
+        <h2>Formulário de Inscrição de Voluntários</h2>
+    <form id="volunteerForm">
+        <h3>Escolha sua opção de voluntariado</h3>
+        <div class="opcoes-voluntariado">
+            <div class="opcao">
+                <input type="checkbox" id="carona" name="voluntariado" value="carona" onclick="mostrarFormulario()"> 
+                <label for="carona">Dar carona</label>
+            </div>
+            <div class="opcao">
+                <input type="checkbox" id="atendimento" name="voluntariado" value="atendimento" onclick="mostrarFormulario()"> 
+                <label for="atendimento">Realizar pronto atendimento</label>
+            </div>
+        </div>
+
+        <!-- Formulário de Carona -->
+        <div id="formCarona" class="formu" style="display:none;">
+            <h3>Formulário de Carona</h3>
+            <label for="nomeCarona">Nome Completo:</label>
+            <input type="text" id="nomeCarona" name="nomeCarona" required><br>
+
+            <label for="telefoneCarona">Telefone:</label>
+            <input type="text" id="telefoneCarona" name="telefoneCarona" required><br>
+
+            <label for="enderecoCarona">Endereço:</label>
+            <input type="text" id="enderecoCarona" name="enderecoCarona" required><br>
+
+            <label for="veiculoCarona">Modelo e Placa do Veículo:</label>
+            <input type="text" id="veiculoCarona" name="veiculoCarona"><br>
+
+            <label for="horariosCarona">Horários Disponíveis:</label><br>
+            <input type="checkbox" name="horariosCarona" id="domCarona">
+            <label for="domCarona">Domingo</label>
+            <input type="checkbox" name="horariosCarona" id="segCarona">
+            <label for="segCarona">Segunda</label>
+            <input type="checkbox" name="horariosCarona" id="terCarona">
+            <label for="terCarona">Terça</label>
+            <input type="checkbox" name="horariosCarona" id="quaCarona">
+            <label for="quaCarona">Quarta</label>
+            <input type="checkbox" name="horariosCarona" id="quiCarona">
+            <label for="quiCarona">Quinta</label>
+            <input type="checkbox" name="horariosCarona" id="sexCarona">
+            <label for="sexCarona">Sexta</label>
+            <input type="checkbox" name="horariosCarona" id="sabCarona">
+            <label for="sabCarona">Sábado</label><br>
+
+            <label for="inicioCarona">Início:</label>
+            <input type="text" id="inicioCarona" name="inicioCarona"><br>
+            <label for="fimCarona">Fim:</label>
+            <input type="text" id="fimCarona" name="fimCarona"><br>
+
+            <input type="checkbox" name="termosCarona" id="termosCarona" required>
+            <label for="termosCarona">Aceito os termos</label><br>
+
+            <button type="submit">Enviar formulario</button>
+        </div>
+
+        <!-- Formulário de Pronto Atendimento -->
+        <div id="formAtendimento" class="formu" style="display:none;">
+            <h3>Formulário de Pronto Atendimento</h3>
+            <label for="nomeAtendimento">Nome Completo:</label>
+            <input type="text" id="nomeAtendimento" name="nomeAtendimento" required><br>
+
+            <label for="telefoneAtendimento">Telefone:</label>
+            <input type="text" id="telefoneAtendimento" name="telefoneAtendimento" required><br>
+
+            <label for="enderecoAtendimento">Endereço:</label>
+            <input type="text" id="enderecoAtendimento" name="enderecoAtendimento" required><br>
+
+            <label for="registroAtendimento">Número do Registro Profissional:</label>
+            <input type="text" id="registroAtendimento" name="registroAtendimento" required><br>
+
+            <label for="horariosAtendimento">Horários Disponíveis:</label><br>
+            <input type="checkbox" name="horariosAtendimento" id="domAtendimento">
+            <label for="domAtendimento">Domingo</label>
+            <input type="checkbox" name="horariosAtendimento" id="segAtendimento">
+            <label for="segAtendimento">Segunda</label>
+            <input type="checkbox" name="horariosAtendimento" id="terAtendimento">
+            <label for="terAtendimento">Terça</label>
+            <input type="checkbox" name="horariosAtendimento" id="quaAtendimento">
+            <label for="quaAtendimento">Quarta</label>
+            <input type="checkbox" name="horariosAtendimento" id="quiAtendimento">
+            <label for="quiAtendimento">Quinta</label>
+            <input type="checkbox" name="horariosAtendimento" id="sexAtendimento">
+            <label for="sexAtendimento">Sexta</label>
+            <input type="checkbox" name="horariosAtendimento" id="sabAtendimento">
+            <label for="sabAtendimento">Sábado</label><br>
+
+            <label for="inicioAtendimento">Início:</label>
+            <input type="text" id="inicioAtendimento" name="inicioAtendimento"><br>
+            <label for="fimAtendimento">Fim:</label>
+            <input type="text" id="fimAtendimento" name="fimAtendimento"><br>
+
+            <input type="checkbox" name="termosAtendimento" id="termosAtendimento" required>
+            <label for="termosAtendimento">Aceito os termos</label><br>
+
+            <button type="submit">Enviar Atendimento</button>
+        </div>
+
+        <!-- Formulário misto -->
+        <div id="formMisto" class="formu" style="display:none;">
+            <h3>Formulário misto</h3>
+            <label for="nomeMisto">Nome Completo:</label>
+            <input type="text" id="nomeMisto" name="nomeMisto" required><br>
+
+            <label for="telefoneMisto">Telefone:</label>
+            <input type="text" id="telefoneMisto" name="telefoneMisto" required><br>
+
+            <label for="enderecoMisto">Endereço:</label>
+            <input type="text" id="enderecoMisto" name="enderecoMisto" required><br>
+
+            <label for="registroMisto">Número do Registro Profissional:</label>
+            <input type="text" id="registroMisto" name="registroMisto" required><br>
+
+            <label for="horariosMisto">Horários Disponíveis:</label><br>
+            <input type="checkbox" name="horariosMisto" id="domMisto">
+            <label for="domMisto">Domingo</label>
+            <input type="checkbox" name="horariosMisto" id="segMisto">
+            <label for="segMisto">Segunda</label>
+            <input type="checkbox" name="horariosMisto" id="terMisto">
+            <label for="terMisto">Terça</label>
+            <input type="checkbox" name="horariosMisto" id="quaMisto">
+            <label for="quaMisto">Quarta</label>
+            <input type="checkbox" name="horariosMisto" id="quiMisto">
+            <label for="quiMisto">Quinta</label>
+            <input type="checkbox" name="horariosMisto" id="sexMisto">
+            <label for="sexMisto">Sexta</label>
+            <input type="checkbox" name="horariosMisto" id="sabMisto">
+            <label for="sabMisto">Sábado</label><br>
+
+            <label for="inicioMisto">Início:</label>
+            <input type="text" id="inicioMisto" name="inicioMisto"><br>
+            <label for="fimMisto">Fim:</label>
+            <input type="text" id="fimMisto" name="fimMisto"><br>
+
+            <input type="checkbox" name="termosMisto" id="termosMisto" required>
+            <label for="termosMisto">Aceito os termos</label><br>
+
+            <button type="submit">Enviar Atendimento</button>
+        </div>
+
+        <p id="confirmation2" style="display:none; color: green;">Inscrição enviada com sucesso! Entraremos em contato em breve.</p>
+    </form>
+</div>
+    </main>
+
+    <div class="anuncio" id="dois">
+        anúncio
+    </div>
+    
+    <footer>
+    <p>Site criado por <a href="https://github.com/Hamster0718" rel="external" target="_blank" class="rodape">Ana Laura do Santos</a>, <a href="https://github.com/AnaJuBolinho" target="_blank" rel="external" class="rodape">Ana Julia Belanciere</a>, e <a href="https://github.com/JulhoAgosto" target="_blank" rel="external" class="rodape">Julio Gonçalves</a> 
+    </p>
+    <p><small>Participação de <a href="https://github.com/NathanEABev" target="_blank" rel="external" class="rodape">Nathan Bevilaqua</a></small></p>
+    </footer>
+
+    <br>
+
+    <input type="number" name="Valor" id="value">
+    <script src="script.js"></script>
+</body>
+</html>
