@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrocinadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="iconmenu.png" alt="icone de menu" id="botao-menu">
+        <a href="index.html"><h1>Faça sua Doação</h1></a>
+        <a href="index.html"><img src="logo.png" alt="logo AmbuApoio" id="logo"></a>
+    </header>
+
+    <nav id="menu-lateral">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="voluntario.html">Voluntariem-se</a></li>
+            <li><a href="patrocinio.html" class="active">Patrocinadores</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="patrocinadores">
+            <h2>Nosso Agradecimento aos Patrocinadores</h2>
+            <p id="patro">Agradecemos profundamente aos nossos patrocinadores que tornam o <span>AmbuApoio</span> possível. Sem o apoio de vocês, nada disso seria possível.</p>
+            
+            <div class="patrocinador-list">
+                <div class="patrocinador">
+                    <a href="https://www.facebook.com/izabeldealmeida.marin.9/" target="_blank" rel="external"><img src="m2c7sazo.png" id="altura"></a>
+                    <p>Izabem de Almeida Marim</p>
+                </div>
+                <div class="patrocinador">
+                    <a href="https://sed.educacao.sp.gov.br" target="_blank" rel="external"><img src="https://static.wixstatic.com/media/12b7c0_4817741669ab48bb907f1a40169c6521~mv2.png/v1/fill/w_448,h_466,al_c,lg_1,q_85,enc_auto/img_ensino_integral.png"></a>
+                    <p>Programa de ensino integral</p>
+                </div>
+                <div class="patrocinador">
+                    <a href="https://www.facebook.com/izabeldealmeida.marin.9/" target="_blank" rel="external"><img src="https://ouromoderno.com.br/wp-content/uploads/2018/04/Empreendedorismo.png"></a>
+                    <p>Empreendedorismo IAM</p>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <h2>Formulário de Inscrição de Patrocinadores</h2>
+            <form id="sponsorForm">
+                <label for="name">Nome da Empresa:</label>
+                <input type="text" id="name" name="name" placeholder="Digite o nome da sua empresa" required>
+                
+                <br>
+
+                <label for="email">Email de Contato:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                
+                <br>
+
+                <label for="website">Website da Empresa:</label>
+                <input type="url" id="website" name="website" placeholder="Digite o site da sua empresa">
+                
+                <br>
+
+                <label for="level">Nível de Patrocínio:</label>
+                <select id="level" name="level">
+                    <option value="bronze">Bronze</option>
+                    <option value="prata">Prata</option>
+                    <option value="ouro">Ouro</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+                
+                <br>
+
+                <label for="message">Mensagem ou Observações:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Deixe uma mensagem"></textarea><br>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+            <p id="confirmation1" style="display:none; color: green;">Inscrição enviada com sucesso! Entraremos em contato em breve.</p>
+        </div>
+    </main>
+
+    <div class="anuncio" id="dois">
+        anúncio
+    </div>
+    
+    <footer>
+    <p>Site criado por <a href="https://github.com/Hamster0718" rel="external" target="_blank" class="rodape">Ana Laura do Santos</a>, <a href="https://github.com/AnaJuBolinho" target="_blank" rel="external" class="rodape">Ana Julia Belanciere</a>, e <a href="https://github.com/JulhoAgosto" target="_blank" rel="external" class="rodape">Julio Gonçalves</a> 
+    </p>
+    <p><small>Participação de <a href="https://github.com/NathanEABev" target="_blank" rel="external" class="rodape">Nathan Bevilaqua</a></small></p>
+    </footer>
+
+    <br>
+
+    <input type="number" name="Valor" id="value">
+    <script src="script.js"></script>
+</body>
+</html>
