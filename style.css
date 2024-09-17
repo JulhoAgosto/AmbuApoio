@@ -289,3 +289,11 @@ a.rodape:hover {
     color: var(--azul);
     text-decoration: underline;
 }
+
+.radio > .radio-item {
+    display: inline-block;
+}
+
+.horario > .horario-item {
+    display: inline-block;
+}
